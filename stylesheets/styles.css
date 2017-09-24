@@ -1,12 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 html {
 }
 
 body {
   padding: 50px;
-  font: 14px/1.5 "Open Sans", sans-serif;
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
-  letter-spacing: 0;
   font-style: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,13 +13,12 @@ body {
   color: #333;
 }
 
-
 .text-muted {
     color: #CFCFCF;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  color: #333;
   margin:0 0 20px;
 }
 
@@ -47,13 +44,13 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#1B2126;
+  color:#333;
   font-weight:400;
 }
 
 a small {
   font-size:11px;
-  color:#777;
+  color:#333;
   margin-top:-0.6em;
   display:block;
 }
@@ -173,7 +170,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:550px;
   float:right;
   padding-bottom:50px;
 }
