@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400:700');
-
 html {
 }
 
@@ -40,7 +39,7 @@ body {
 }
 
 h1, h2, h3 {
-  margin: 0 0 20px;
+  margin: 20px 0 20px;
   font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-size: 1.4rem
@@ -50,7 +49,7 @@ h4, h5, h6 {
   margin: 0 0 0px;
   font-weight: 700;
   font-family: PT Sans, sans-serif;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 p, ul, ol, table, pre, dl {
@@ -101,7 +100,7 @@ th, td {
 
 dt {
   color: #444;
-  font-weight: 700
+  font-weight: 500
 }
 
 th {
