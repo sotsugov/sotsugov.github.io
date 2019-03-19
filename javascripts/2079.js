@@ -3,9 +3,17 @@ var espiArr = ["S","E","G","I","D","A"]
 var genArr = ["AA","OO","PX","FX","RE","MU"]
 
 window.onload = function () {
-  document.getElementById("id-iso").innerHTML = isoArr[Math.floor(Math.random() * isoArr.length)];
-  document.getElementById("id-espi").innerHTML = espiArr[Math.floor(Math.random() * espiArr.length)];
-  document.getElementById("id-lot").innerHTML = (Math.floor(Math.random() * (10421930994 - 1 + 1)) + 1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  document.getElementById("id-lr").innerHTML = (Math.random() * (0.1 - 0.0001) + 0.0001).toFixed(3);
-  document.getElementById("id-gen").innerHTML = genArr[Math.floor(Math.random() * genArr.length)];
+  var id_iso = isoArr[Math.floor(Math.random() * isoArr.length)];
+  var id_espi = espiArr[Math.floor(Math.random() * espiArr.length)];
+  var id_lot = (Math.floor(Math.random() * (10421930994 - 1 + 1)) + 1);
+  var id_lr = (Math.random() * (0.1 - 0.0001) + 0.0001).toFixed(3);
+  var id_gen = genArr[Math.floor(Math.random() * genArr.length)];
+  var pod_id = id_espi + id_gen + id_lr + "-" + id_iso + ":" + id_lot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  var pod_href = id_espi + id_gen + id_lr.replace(".", "") + id_iso + id_lot;
+
+
+  document.getElementById("pod_link").innerHTML = pod_id
+
+  var pod_link = document.getElementById("pod_link");
+  pod_link.setAttribute('href', pod_href);
 }
