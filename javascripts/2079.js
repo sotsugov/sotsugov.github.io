@@ -11,8 +11,7 @@ window.onload = function () {
   var pod_id = id_espi + id_gen + id_lr + "-" + id_iso + ":" + id_lot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   var pod_href = id_espi + id_gen + id_lr.replace(".", "") + id_iso + id_lot;
 
-
-  document.getElementById("pod_link").innerHTML = pod_id
+  document.getElementById("pod_link").innerHTML = pod_id;
 
   var pod_link = document.getElementById("pod_link");
   pod_link.setAttribute('href', pod_href);
